@@ -1,0 +1,63 @@
+Módulos de Python Esenciales que Usamos (¡Para tus Notas!):
+
+Estos son los caballos de batalla que nos acompañaron en todos los ejemplos de código:
+
+    numpy (NumPy)
+        ¿Para qué sirve? Es la librería fundamental para computación numérica en Python. Proporciona un objeto de array N-dimensional (Ndarray) de alto rendimiento y herramientas para trabajar con estos arrays. Piensa en ella como la calculadora científica de Python para manejar grandes conjuntos de números.
+        Lo usamos para:
+            Crear y manipular arrays de datos (ej. np.array([...])).
+            Generar datos numéricos de forma eficiente (ej. np.random.normal() para la distribución normal, np.linspace() para secuencias de números).
+            Realizar operaciones matemáticas rápidas sobre arrays (ej. np.mean() para el promedio, np.std() para la desviación estándar).
+        Cómo lo importamos: import numpy as np (casi siempre se le da el alias np).
+
+    matplotlib.pyplot (parte de Matplotlib)
+        ¿Para qué sirve? Es la librería más popular para crear visualizaciones estáticas e interactivas en Python. Permite hacer todo tipo de gráficos: líneas, barras, dispersión, histogramas, etc.
+        Lo usamos para:
+            Crear figuras y ejes para los gráficos (ej. plt.figure()).
+            Añadir títulos y etiquetas a los ejes (ej. plt.title(), plt.xlabel(), plt.ylabel()).
+            Mostrar leyendas y cuadrículas (ej. plt.legend(), plt.grid()).
+            Mostrar los gráficos (¡súper importante! plt.show()).
+            Controlar estilos generales de los gráficos (ej. plt.style.use()).
+        Cómo lo importamos: import matplotlib.pyplot as plt (el alias plt es el estándar).
+
+    seaborn
+        ¿Para qué sirve? Es una librería de visualización de datos construida sobre Matplotlib. Está diseñada para hacer gráficos estadísticos más atractivos y con menos líneas de código. Es excelente para explorar relaciones entre datos.
+        Lo usamos para:
+            Crear histogramas con estimación de densidad (ej. sns.histplot()).
+            Generar gráficos de densidad (ej. sns.kdeplot()).
+            Hacer diagramas de dispersión (sns.scatterplot()).
+        Cómo lo importamos: import seaborn as sns (el alias sns es el estándar).
+
+    sklearn (Scikit-learn)
+        ¿Para qué sirve? ¡Esta es la librería estrella para el Aprendizaje Automático en Python! Contiene una enorme variedad de algoritmos de Machine Learning para clasificación, regresión, clustering, reducción de dimensionalidad, preprocesamiento de datos y selección de modelos. Es robusta, eficiente y fácil de usar.
+        Módulos específicos que usamos dentro de sklearn:
+            sklearn.linear_model: Para modelos lineales.
+                LinearRegression: Implementa la regresión lineal simple y múltiple.
+            sklearn.preprocessing: Para el preprocesamiento de datos.
+                PolynomialFeatures: Para generar características polinómicas (elevar a potencias, etc.).
+            sklearn.model_selection: Para la selección y evaluación de modelos.
+                train_test_split: Para dividir los datos en conjuntos de entrenamiento y prueba.
+            sklearn.metrics: Para evaluar el rendimiento de los modelos.
+                mean_squared_error: Para regresión (error cuadrático medio).
+                r2_score: Para regresión (coeficiente de determinación).
+                accuracy_score: Para clasificación (precisión general).
+                classification_report: Para clasificación (reporte detallado de métricas).
+            sklearn.svm: Para Máquinas de Vectores de Soporte.
+                SVC: El clasificador de Máquinas de Vectores de Soporte.
+            sklearn.datasets: Para cargar o generar conjuntos de datos de ejemplo.
+                load_iris: Carga el famoso conjunto de datos de flores Iris.
+                make_circles: Genera datos con forma de círculos (útil para probar kernels no lineales en SVM).
+                make_blobs: Genera datos agrupados en "bloques" (ideal para clustering).
+            sklearn.tree: Para árboles de decisión.
+                DecisionTreeClassifier: El clasificador de árbol de decisión.
+                plot_tree: Para visualizar el árbol de decisión directamente.
+                export_graphviz: Para exportar el árbol a un formato que graphviz pueda leer (opcional).
+            sklearn.cluster: Para algoritmos de clustering.
+                KMeans: El popular algoritmo K-Means.
+        Cómo lo importamos: Se importan las clases o funciones específicas que se necesitan (ej. from sklearn.linear_model import LinearRegression).
+
+    graphviz
+        ¿Para qué sirve? Es una herramienta de visualización de gráficos (¡diagramas!) de código abierto. En Python, la librería graphviz permite generar descripciones de gráficos en el lenguaje DOT, que luego pueden ser renderizados en formatos como PDF o PNG.
+        Lo usamos para:
+            Visualizar los Árboles de Decisión de forma más detallada (requiere la instalación del software Graphviz en el sistema).
+        Cómo lo importamos: import graphviz
